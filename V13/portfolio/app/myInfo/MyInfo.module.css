@@ -1,0 +1,76 @@
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    /* border: 2px solid green; */
+}
+
+.myInfo {
+    /* border: 2px solid white; */
+    border-radius: 100px;
+    border: none;
+    display: flex;
+    width: 50%;
+    height: 50%;
+    box-shadow: 1px 13px 49px 0px rgba(255,40,40,0.66); 
+}
+
+.left p {
+    /* border: 2px solid white; */
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.left h1>span {
+    /* border: 2px solid white; */
+    color: purple;
+}
+
+.textPop {
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+    /* Adjust the values as needed */
+}
+
+.textPop {
+    animation: textPop 1s infinite alternate;
+}
+
+@keyframes textPop {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.left,
+.right {
+    /* border: 2px solid white; */
+    line-height: 1.50;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.smIcon {
+    /* border: 2px solid white; */
+    width: 75px;
+    height: 75px;
+}
+
+.headshot {
+    border-radius: 120px;
+}
+.link{
+    color: purple;
+    text-decoration: none;
+}

@@ -1,0 +1,7 @@
+.projects{
+    padding: 20px;
+}
+.project{
+    border: 2px solid green;
+    width: 100%;
+}
