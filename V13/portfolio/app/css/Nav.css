@@ -33,3 +33,6 @@ nav a {
     color: white;
     /* text-decoration: none; */
 }
+nav div{
+    width: 50%;
+}

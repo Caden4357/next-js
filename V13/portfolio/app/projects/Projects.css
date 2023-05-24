@@ -11,7 +11,7 @@
     border-image: linear-gradient(to right, red, purple) 1;
     border-radius: 20px;
     animation: border-fade 2s infinite;
-    overflow: scroll;
+    /* overflow: scroll; */
 
 }
 .project p{

@@ -15,6 +15,7 @@
     display: flex;
     width: 50%;
     height: 50%;
+    text-align: center;
     /* box-shadow: 1px 13px 49px 0px rgba(255,40,40,0.66);  */
 }
 
@@ -23,6 +24,7 @@
     width: 300px;
     text-align: center;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .left h1>span {
@@ -78,7 +80,7 @@
 }
 @media (max-width: 1285px){
     .myInfo{
-        flex-direction: column;
+        flex-direction: column-reverse;
         height: 80%;
         align-items: center;
     }
