@@ -27,7 +27,7 @@ export default function Projects() {
                         width={200} height={200}
                         />
                 </div>
-                <div className='w-50'>
+                <div className='w-50 projectText'>
                     <h2 className='mb-20'>Chat Socket </h2>
                     <p>Secure log in and registration using bcrypt and storing user information in a JSON Web token. Sending messages with socket io 4 rooms to choose from messages stored in a DB with the ability to leave and join whichever room you want and chat with friends</p>
                     <Link href='#'>View Project</Link>
@@ -37,7 +37,7 @@ export default function Projects() {
                 <div className='d-flex ai-center gap'>
                     <Image src='/project.png' alt='Project 1' width={200} height={200} />
                 </div>
-                <div className='w-50'>
+                <div className='w-50 projectText'>
                     <h2 className='mb-20'>Project 2</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt temporibus a vero dolores. Quas provident pariatur ipsum voluptatem, non, culpa cupiditate nobis quibusdam praesentium ut quam ex in expedita obcaecati.</p>
                     <Link href='#'>View Project</Link>
@@ -47,7 +47,7 @@ export default function Projects() {
                 <div className='d-flex ai-center gap'>
                     <Image src='/project.png' alt='Project 1' width={200} height={200} />
                 </div>
-                <div className='w-50'>
+                <div className='w-50 projectText'>
                     <h2 className='mb-20'>Project 3</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt temporibus a vero dolores. Quas provident pariatur ipsum voluptatem, non, culpa cupiditate nobis quibusdam praesentium ut quam ex in expedita obcaecati.</p>
                     <Link href='#'>View Project</Link>

@@ -15,7 +15,7 @@
     display: flex;
     width: 50%;
     height: 50%;
-    box-shadow: 1px 13px 49px 0px rgba(255,40,40,0.66); 
+    /* box-shadow: 1px 13px 49px 0px rgba(255,40,40,0.66);  */
 }
 
 .left p {
@@ -59,6 +59,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* text-overflow: clip; */
+    /* word-wrap: break-word; */
 }
 
 .smIcon {
@@ -73,4 +75,26 @@
 .link{
     color: purple;
     text-decoration: none;
+}
+@media (max-width: 1285px){
+    .myInfo{
+        flex-direction: column;
+        height: 80%;
+        align-items: center;
+    }
+}
+@media (max-width: 945px){
+    .left{
+        width: 100%;
+        text-align: center;
+    }
+    .left > p{
+        font-size: 20px;
+    }
+    .myInfo{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        box-shadow: none;
+    }
 }
