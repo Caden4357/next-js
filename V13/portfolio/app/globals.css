@@ -62,7 +62,7 @@ h1{
     font-size: 32px;
 }
 button{
-    background-color: purple;
+    /* background-color: purple; */
     color: white;
     border: none;
     border-radius: 5px;

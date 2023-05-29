@@ -29,8 +29,8 @@ export default function Projects() {
                 </div>
                 <div className='w-50 projectText'>
                     <h2 className='mb-20'>Chat Socket </h2>
-                    <p>Secure log in and registration using bcrypt and storing user information in a JSON Web token. Sending messages with socket io 4 rooms to choose from messages stored in a DB with the ability to leave and join whichever room you want and chat with friends</p>
-                    <Link href='#'>View Project</Link>
+                    <p>Secure log in and registration using bcrypt and storing user information in a JSON Web token. Sending messages with socket io 4 rooms to choose from messages stored in a MongoDB Database with the ability to leave and join whichever room you want and chat with friends</p>
+                    <Link href='#'>View Demo Of Project</Link>
                 </div>
             </div>
             <div className='d-flex ai-center project p-5 jc-evenly align-self-end'>

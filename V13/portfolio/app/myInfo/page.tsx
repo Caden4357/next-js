@@ -6,22 +6,22 @@ import Image from 'next/image'
 
 export default function MyInfo() {
     return (
-        <main className={styles.myInfo}>
+        <div className={styles.myInfo}>
             <div className={styles.left}>
                 {/* <p>Hi there! I'm</p> */}
                 <h1 className={styles.textPop}><span>Caden</span> Wilcox</h1>
                 <h2>Full Stack Developer</h2>
                 <p>From code to creativity, I build digital dreams with a full-stack flair</p>
                 <button className={styles.textPop}>Resume</button>
-                <Link href="https://www.linkedin.com/in/caden-wilcox-python/"><img className={styles.smIcon} src="/linkedIn.png" alt="" /></Link>
+                <Link target="_blank" href="https://www.linkedin.com/in/caden-wilcox-python/"><img className={styles.smIcon} src="/linkedIn.png" alt="" /></Link>
                 <div className='d-flex jc-center ai-center gap'>
                     <Image src="/greenArrow.jpeg" alt="" width={40} height={40} />
                     <Link className={styles.link} href='/projects'>Check out my projects!</Link>
                 </div>
             </div>
             <div className={styles.right}>
-                <Image src="/headshot.jpg" alt="hero" width={220} height={220} className={styles.headshot}/>
+                <Image src="/headshot.jpg" alt="hero" width={350} height={350} className={styles.headshot}/>
             </div>
-        </main>
+        </div>
     )
 }
