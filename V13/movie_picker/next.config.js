@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {}
+module.exports = {
+    env: {
+        customKey: 'my-value',
+    },
+};
 
 module.exports = nextConfig

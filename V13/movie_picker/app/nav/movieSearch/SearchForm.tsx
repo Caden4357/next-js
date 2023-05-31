@@ -15,7 +15,7 @@ export default function SearchForm() {
         e.preventDefault()
         console.log("Submitting")
         const movies = await SearchMovies(query)
-        console.log(movies.result)
+        console.log(movies)
         setMovies(movies.result)
         router.replace('/MovieSearchResults')
     }
