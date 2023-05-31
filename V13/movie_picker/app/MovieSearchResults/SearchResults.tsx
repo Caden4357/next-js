@@ -1,5 +1,6 @@
 'use client'
 import React, { useContext } from 'react'
+import Link from 'next/link'
 import { MovieContext, MovieProvider } from '../context/MovieProvider'
 export default function SearchResults() {
     const { movies, setMovies } = useContext(MovieContext);
@@ -9,7 +10,7 @@ export default function SearchResults() {
                 <div key={movie.imdbId} className='w-40'>
                     {
                         movie.posterURLs.original?
-                        <img src={movie.posterURLs.original} alt={movie.title} className='h-40 w-40'/>:
+                        <Link href={`/MovieSearchResults/${movie.imdbId}`}><img src={movie.posterURLs.original} alt={movie.title} className='h-40 w-40'/></Link>:
                         null
                     }
                     <h3 className='dark:text-white text-center'>{movie.title}</h3>

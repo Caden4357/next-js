@@ -3,7 +3,7 @@ const API_KEY: string | undefined = process.env.NEXT_PUBLIC_API_KEY;
 console.log("GERE");
 const url = 'https://streaming-availability.p.rapidapi.com/v2/search/title?title=batman&country=us&show_type=movie&output_language=en';
 
-export default async function SearchMovies(search: string) {
+export default async function ViewMovie(id: string) {
     try {
         console.log("API_KEY", API_KEY);
         if (!API_KEY) {
@@ -20,9 +20,13 @@ export default async function SearchMovies(search: string) {
 
         console.log("HERE");
         const res = await fetch(
-            `https://streaming-availability.p.rapidapi.com/v2/search/title?title=${search}&country=us&show_type=movie&output_language=en`,
+            `https://streaming-availability.p.rapidapi.com/v2/get/basic?country=us&imdb_id=${id}&output_language=en`,
             options
         );
+
+        if (!res.ok) {
+            throw new Error('Something went wrong while fetching Movies');
+        }
 
         return res.json();
     } catch (error) {
