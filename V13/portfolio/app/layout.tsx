@@ -1,4 +1,4 @@
-import Nav from './Nav'
+import Nav from '../nav/Nav'
 import './globals.css'
 import { Inter } from 'next/font/google'
 

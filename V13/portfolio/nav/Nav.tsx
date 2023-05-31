@@ -1,7 +1,6 @@
 import React from 'react'
-import './css/Nav.css'
+import './Nav.css'
 import Link from 'next/link'
-import Image from 'next/image'
 import MobileNav from './MobileNav'
 export default function Nav() {
 

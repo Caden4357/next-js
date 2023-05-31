@@ -20,7 +20,7 @@ export default function MyInfo() {
                 </div>
             </div>
             <div className={styles.right}>
-                <Image src="/headshot.jpg" alt="hero" width={350} height={350} className={styles.headshot}/>
+                <img src="/headshot.jpg" alt="hero" className={styles.headshot}/>
             </div>
         </div>
     )
