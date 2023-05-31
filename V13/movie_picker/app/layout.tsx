@@ -1,6 +1,9 @@
+'use client'
 import './globals.css'
+import { ReactNode } from 'react'
 import { Inter } from 'next/font/google'
 import Nav from './nav/Nav'
+import { MovieProvider } from './context/MovieProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,16 +13,20 @@ export const metadata = {
 }
 
 export default function RootLayout({
-  children,
+  children=null,
 }: {
-  children: React.ReactNode
+  children?: ReactNode
 }) {
   return (
     <html lang="en" className=''>
-      <body className={inter.className}>
-        <Nav/>
-        {children}
+      <body>
+        <MovieProvider>
+          <Nav/>
+          <main className="p-4 bg-white dark:bg-slate-900 w-screen h-screen">
+            {children}
+          </main>
+        </MovieProvider>
       </body>
-    </html>
+    </html> 
   )
 }
