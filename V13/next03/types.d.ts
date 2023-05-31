@@ -27,3 +27,20 @@ type Post = {
     "title": string,
     "body": string
 }
+
+// type result = {
+//     "id": string,
+//     "countries": {
+//         "supportedStreamingTypes":{
+//             "addon": boolean,
+//             "buy": boolean,
+//             "free": boolean,
+//             "rent": boolean,
+//             "subscription": boolean
+//         }
+//     }
+// }
+
+type result = {
+    "id": string,
+}

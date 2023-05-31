@@ -7,9 +7,9 @@ export default function Nav() {
 
 
     return (
-        <nav className='d-flex jc-center ai-center'>
-            <div className='d-flex jc-center ai-center gap nav-links'>
-                {/* <h2>Hire Me!</h2> */}
+        <nav className='d-flex jc-evenly ai-center'>
+            <h2>Hire Me!</h2>
+            <div className='d-flex jc-end ai-center gap nav-links'>
                 <Link href='/myInfo'>Home</Link>
                 <Link target="_blank" href='https://www.linkedin.com/in/caden-wilcox-python/'>Linked In</Link>
                 <Link href='/projects'>Projects</Link>

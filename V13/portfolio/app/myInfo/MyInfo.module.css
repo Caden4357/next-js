@@ -13,6 +13,7 @@
     border-radius: 100px;
     border: none;
     display: flex;
+    /* justify-content: center; */
     width: 50%;
     height: 50%;
     text-align: center;
