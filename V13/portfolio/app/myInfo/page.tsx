@@ -14,9 +14,14 @@ export default function MyInfo() {
                 <p>From code to creativity, I build digital dreams with a full-stack flair</p>
                 <button className={styles.textPop}>Resume</button>
                 <Link target="_blank" href="https://www.linkedin.com/in/caden-wilcox-python/"><img className={styles.smIcon} src="/linkedIn.png" alt="" /></Link>
-                <div className='d-flex jc-center ai-center gap'>
+                {/* <div className='d-flex jc-center ai-center gap'>
                     <Image src="/greenArrow.jpeg" alt="" width={40} height={40} />
                     <Link className={styles.link} href='/projects'>Check out my projects!</Link>
+                </div> */}
+                <div className='d-flex jc-center ai-center gap'>
+                    {/* <Image src="/greenArrow.jpeg" alt="" width={40} height={40} /> */}
+                    <h3><Link target="_blank" className={styles.link} href='mailto:wilcox4357@gmail.com'>Contact Me!</Link></h3>
+                    
                 </div>
             </div>
             <div className={styles.right}>
