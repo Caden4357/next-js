@@ -1,5 +1,5 @@
 'use client'
-import GetGenres from '@/lib/GetGenres'
+// import GetGenres from '@/lib/GetGenres'
 import React, {useState} from 'react'
 
 type Genre = {
@@ -10,9 +10,9 @@ type GenreData = {
 }
 
 export default async function page() {
-    const genreData: Promise<GenreData[]> = GetGenres()
-    const genres = await genreData
-    console.log("##########", genres);
+    // const genreData: Promise<GenreData[]> = GetGenres()
+    // const genres = await genreData
+    // console.log("##########", genres);
     return (
         <div>
             <h1>Genres</h1>

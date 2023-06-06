@@ -22,7 +22,7 @@ export default function RootLayout({
       <body>
         <MovieProvider>
           <Nav/>
-          <main className="p-4 bg-white dark:bg-slate-900 w-screen h-screen">
+          <main className="p-4 bg-white dark:bg-slate-900">
             {children}
           </main>
         </MovieProvider>
