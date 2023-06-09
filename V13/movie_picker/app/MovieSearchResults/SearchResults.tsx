@@ -15,11 +15,6 @@ export default function SearchResults() {
                         null
                     }
                     <h3 className='text-black dark:text-white text-center'>{movie.title}</h3>
-                    {/* {
-                        movie.youtubeTrailerVideoLink?
-                        <a href={movie.youtubeTrailerVideoLink} target='_blank' rel='noreferrer' className='dark:text-white text-center block text-center bg-sky-600'>Watch Trailer</a>:
-                        null
-                    } */}
                 </div>
             ))}
         </div>

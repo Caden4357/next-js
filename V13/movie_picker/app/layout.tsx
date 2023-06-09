@@ -18,13 +18,13 @@ export default function RootLayout({
   children?: ReactNode
 }) {
   return (
-    <html lang="en" className=''>
-      <body>
+    <html lang="en">
+      <body className='dark:bg-slate-900'>
         <MovieProvider>
           <Nav/>
-          <main className="p-4 bg-white dark:bg-slate-900">
+          <div className="p-4 bg-white dark:bg-slate-900">
             {children}
-          </main>
+          </div>
         </MovieProvider>
       </body>
     </html> 
