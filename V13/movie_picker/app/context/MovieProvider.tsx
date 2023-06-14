@@ -1,6 +1,6 @@
 import { createContext, ReactElement, ReactNode, useState} from 'react';
 import { Dispatch, SetStateAction } from 'react';
-type Movie = {
+export type Movie = {
     imdbId: string,
     title: string,
     posterURLs: {
@@ -8,7 +8,7 @@ type Movie = {
     },
     youtubeTrailerVideoLink: string,
 }
-type MovieType = {
+export type MovieType = {
     movies: Movie[],
     setMovies:  Dispatch<SetStateAction<Movie[]>>
 }

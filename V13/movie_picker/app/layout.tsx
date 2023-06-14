@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className='dark:bg-slate-900'>
         <MovieProvider>
           <Nav/>
-          <div className="p-4 bg-white dark:bg-slate-900">
+          <div className="h-100 p-4 bg-white dark:bg-slate-900">
             {children}
           </div>
         </MovieProvider>

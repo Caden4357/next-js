@@ -17,12 +17,19 @@
 }
 
 body {
+  min-height: 100vh;
   /* overflow: hidden; */
-  /* color: rgb(var(--foreground-rgb)); */
-  /* background: linear-gradient(
+  /* color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.vh90-h{
+  height: 90vh;
 }
