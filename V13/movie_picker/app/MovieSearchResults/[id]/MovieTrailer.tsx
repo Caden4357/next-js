@@ -15,7 +15,7 @@ export default function MovieTrailer({ youtubeTrailerVideoLink, posterURL }: Tra
     const videoUrl = `https://www.youtube.com/embed/${youtubeTrailerVideoLink}`;
     return (
         <div className='flex justify-between'>
-            <img src={posterURL} alt={title} className='w-1/5 h-2/5' />
+            <img src={posterURL} alt={title} className='w-1/5 h-2/5'/>
             <DynamicVideoPlayer
                 controls={true}
                 url={videoUrl}

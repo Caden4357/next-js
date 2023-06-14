@@ -6,6 +6,7 @@ import MovieTrailer from './MovieTrailer'
 import MovieNav from './MovieNav'
 import Cast from './Cast'
 import StreamingInfo from './StreamingInfo'
+import Description from './Description'
 type Params = {
     params: {
         id: string
@@ -32,14 +33,16 @@ export default async function page({ params: { id } }: Params) {
                 posterURL={data.result.posterURLs.original}
                 />
             </Suspense>
-            <div className='w-1/5 flex justify-between border-2 border-indigo'>
-                <Cast 
-                    cast={data.result.cast} 
-                />
-                <StreamingInfo 
-                    streamingInfo={data.result.streamingInfo} 
-                />
-
+            <div className='flex justify-between'>
+                <div className='w-1/5 mt-5 flex justify-between'>
+                    <Cast 
+                        cast={data.result.cast} 
+                    />
+                    <StreamingInfo 
+                        streamingInfo={data.result.streamingInfo} 
+                    />
+                </div>
+                <Description overview={data.result.overview}/>
             </div>
             
         </div>

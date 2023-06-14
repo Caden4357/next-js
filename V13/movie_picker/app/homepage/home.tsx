@@ -1,15 +1,14 @@
 'use client'
 import React, {useState, useContext} from 'react'
-import SearchMovies from '@/lib/SearchMovies'
-
-import { useRouter } from 'next/navigation'
-import { MovieContext } from '../context/MovieProvider'
-import SearchForm from '../nav/movieSearch/SearchForm'
+// import AllMovies from '@/lib/AllMovies'
 
 
 export default function HomePage() {
+    // const data = await AllMovies();
+    // console.log(data);
     return (
         <div className=''>
+            <h2>Homepage</h2>
         </div>
     )
 }
