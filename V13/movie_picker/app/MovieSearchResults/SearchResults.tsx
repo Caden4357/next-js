@@ -2,7 +2,8 @@
 import React, { useContext } from 'react'
 import Link from 'next/link'
 import { MovieContext, MovieProvider } from '../context/MovieProvider'
-// border-2 border-indigo-600
+
+
 export default function SearchResults() {
     const { movies, setMovies } = useContext(MovieContext);
     return (

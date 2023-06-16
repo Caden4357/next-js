@@ -10,11 +10,12 @@ export type Movie = {
 }
 export type MovieType = {
     movies: Movie[],
-    setMovies:  Dispatch<SetStateAction<Movie[]>>
+    setMovies:  Dispatch<SetStateAction<Movie[]>>,
+    cursor?: string,
 }
 export const MovieContext = createContext<MovieType>({
     movies: [],
-    setMovies: () => { }
+    setMovies: () => { },
 });
 
 type ChildrenType = {
