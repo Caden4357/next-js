@@ -4,6 +4,7 @@ import { ReactNode } from 'react'
 import { Inter } from 'next/font/google'
 import Nav from './nav/Nav'
 import { MovieProvider } from './context/MovieProvider'
+import { ShowProvider } from './context/TvProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,12 +21,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className='dark:bg-slate-900'>
-        <MovieProvider>
-          <Nav/>
-          <div className="p-4 bg-white dark:bg-slate-900">
-            {children}
-          </div>
-        </MovieProvider>
+        <ShowProvider>
+          <MovieProvider>
+            <Nav/>
+            <div className="p-4 bg-white dark:bg-slate-900">
+              {children}
+            </div>
+          </MovieProvider>
+        </ShowProvider>
       </body>
     </html> 
   )

@@ -8,7 +8,7 @@ export default function LeftSide() {
             <Link href='/' className='dark:text-white cursor-pointer'>
                 Movies
             </Link>
-            <Link href='/' className='dark:text-white'>
+            <Link href='/tvshows' className='dark:text-white'>
                 TV Shows
             </Link>
             <Link href='/genres' className='dark:text-white cursor-pointer'>
