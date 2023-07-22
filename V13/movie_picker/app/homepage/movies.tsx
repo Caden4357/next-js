@@ -29,7 +29,6 @@ export default function Movies({cursor, setCursor}: Props) {
     
     return (
         <>
-            <h2></h2>
             <div className='flex gap-20 flex-wrap'>
                 {
                     movies?.map((movie) => (
