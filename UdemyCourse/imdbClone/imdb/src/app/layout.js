@@ -1,8 +1,9 @@
-import Header from '@/components/Header'
+import Header from '@/app/components/Header'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Providers from './Providers'
-import SearchForm from '@/components/searchForm'
+import SearchForm from '@/app/components/searchForm'
+import Navbar from './components/navbar/navbar'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className}`} >
         <Providers>
           <Header />
+          <Navbar/>
           <SearchForm/>
           {children}  
         </Providers>
