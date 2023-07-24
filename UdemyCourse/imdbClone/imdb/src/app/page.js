@@ -1,3 +1,4 @@
+import HomepageResults from "./components/HomepageResults";
 
 const API_KEY = process.env.API_KEY;
 
@@ -14,14 +15,7 @@ export default async function Home({searchParams}) {
   console.log(movies);
   return (
     <div className="flex flex-wrap gap-10">
-      {
-        movies.results.map((movie) => (
-          <div key={movie.id} className="w-1/6">
-            <img className="w-full" src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path || movie.poster_path}`} alt={movie.title || movie.name} />
-            <h3>{movie.title || movie.name}</h3>
-          </div>
-        ))
-      }
+      <HomepageResults results={movies.results}/>
     </div>
 
   )
