@@ -6,10 +6,10 @@ import Link from 'next/link';
 import DarkModeToggle from './DarkModeToggle';
 const Header = (props) => {
     return (
-        <nav className='flex items-center justify-between py-6 mx-2 max-w-6xl sm:mx-auto'>
+        <nav className='flex items-center justify-between py-6 mx-2 sm:w-8/12 sm:mx-auto'>
             <div className='flex'>
-                <MenuItem title="Movies" address="/about" Icon={BsFillInfoCircleFill} style={'text-amber-600 font-bold'}/>
-                <MenuItem title="TV" address="/about" Icon={BsFillInfoCircleFill} style={'text-amber-600 '}/>
+                <MenuItem title="Movies" address="#" Icon={BsFillInfoCircleFill} style={'text-amber-600 font-bold'}/>
+                <MenuItem title="TV" address="#" Icon={BsFillInfoCircleFill} style={'text-amber-600 '}/>
                 <MenuItem title="Home" address="/" Icon={AiFillHome}/>
                 <MenuItem title="About" address="/about" Icon={BsFillInfoCircleFill}/>
             </div>
