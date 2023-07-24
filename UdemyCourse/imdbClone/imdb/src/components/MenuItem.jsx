@@ -1,14 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
-const MenuItem = ({title, address, Icon }) => {
+const MenuItem = ({ title, address, Icon, style }) => {
     return (
-        <div>
-            <Link href={address} className='hover:text-amber-500 ms-9 '>
-                <Icon className='sm:hidden text-2xl'/>
-                <p className='text-4xl hidden sm:inline'>{title}</p>
+        <Link href={address} className='hover:text-amber-500 mr-6'>
+            <Icon className='sm:hidden text-2xl' />
+            <p className={`text-4xl hidden sm:inline ${style}`}>{title}</p>
 
-            </Link>
-        </div>
-)}
+        </Link>
+    )
+}
 
 export default MenuItem;
