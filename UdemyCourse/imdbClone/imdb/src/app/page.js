@@ -12,9 +12,9 @@ export default async function Home({searchParams}) {
   }
 
   const movies = await res.json();
-  console.log(movies);
+
   return (
-    <div className="flex flex-wrap gap-10">
+    <div className="flex flex-wrap gap-10 w-10/12 mx-auto">
       <HomepageResults results={movies.results}/>
     </div>
 
