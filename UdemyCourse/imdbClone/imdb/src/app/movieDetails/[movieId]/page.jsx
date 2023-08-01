@@ -21,6 +21,7 @@ const MovieDetails = async ({params: {movieId}}) => {
             <h2 className='text-3xl'>{movie.title}</h2>
             <p>Release Date: {movie.release_date}</p>
             <p>Runtime: {movie.runtime} Min</p>
+            <p>IMDb Rating: </p>
             <div className='flex'>
                 <img className="h-96 shadow-sm shadow-gray-500/50" src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path || movie.poster_path}`} alt={movie.title || movie.name} />
                 <iframe className="w-full h-96" src={`https://www.youtube.com/embed/${trailerKey}?autoplay=1`} title={movie.title || movie.name} allowFullScreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>

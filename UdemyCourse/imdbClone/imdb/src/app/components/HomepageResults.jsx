@@ -1,20 +1,16 @@
-import Link from 'next/link';
 import React from 'react';
+import Results from './results';
 
 const HomepageResults = ({ results }) => {
     console.log(results);
     return (
-        <>
+        <div className='sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 max-w-6xl mx-auto py-4'>
             {
                 results.map((movie) => (
-                    
-                    <Link key={movie.id} className="w-1/6" href= {movie.media_type === 'movie'?  `/movieDetails/${movie.id}`: `/tvShowDetails/${movie.id}`}>
-                        <img className="w-full" src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path || movie.poster_path}`} alt={movie.title || movie.name} />
-                        <h3>{movie.title || movie.name}</h3>
-                    </Link>
+                    <Results key={movie.id} results={movie} />
                 ))
             }
-        </>
+        </div>
     )
 }
 

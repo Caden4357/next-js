@@ -8,7 +8,6 @@ const getMovieDetails = async (tvShowId) => {
     const show = await res.json();
     const trailer = await fetch(`https://api.themoviedb.org/3/tv/${tvShowId}/videos?api_key=${API_KEY}&language=en-US` , {next:{revalidate:10000}});
     const trailerData = await trailer.json();
-    console.log(trailerData);
     const officialTrailer = trailerData.results.filter((trailer) => trailer.type === 'Trailer');
     const trailerKey = officialTrailer[0].key;
     return {show, trailerKey};
