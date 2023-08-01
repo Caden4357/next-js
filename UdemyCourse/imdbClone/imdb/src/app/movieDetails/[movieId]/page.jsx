@@ -23,7 +23,7 @@ const MovieDetails = async ({params: {movieId}}) => {
             <p>Runtime: {movie.runtime} Min</p>
             <div className='flex'>
                 <img className="h-96 shadow-sm shadow-gray-500/50" src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path || movie.poster_path}`} alt={movie.title || movie.name} />
-                <iframe className="w-full h-96" src={`https://www.youtube.com/embed/${trailerKey}`} title={movie.title || movie.name} allowFullScreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                <iframe className="w-full h-96" src={`https://www.youtube.com/embed/${trailerKey}?autoplay=1`} title={movie.title || movie.name} allowFullScreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
             </div>
             <p>{movie.overview}</p>
         </div>
